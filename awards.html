@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Hoan Tran | Global IT Awards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Anton&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #EFECEA;
+            scroll-behavior: smooth;
+        }
+        
+        .name-font {
+            font-family: 'Anton', sans-serif;
+        }
+
+        .navbar {
+            background: rgba(50, 50, 50, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .section-title {
+            color: #00b0f0;
+            border-bottom: 3px solid #00b0f0;
+            padding-bottom: 10px;
+        }
+
+        .nav-link {
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            color: #00b0f0;
+        }
+
+        .award-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        .award-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(0 176 240 / 0.25);
+            border-color: #00b0f0;
+        }
+
+        .award-badge {
+            background: linear-gradient(135deg, #00b0f0, #0099cc);
+        }
+
+        /* Scroll Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Typewriter */
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #00b0f0;
+            white-space: nowrap;
+            width: fit-content;
+            margin: 0 auto;
+            animation: typing 4.2s steps(38, end) forwards, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00b0f0; }
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+        }
+        
+        #backToTop:hover {
+            transform: scale(1.1);
+            background-color: #028fc2;
+        }
+
+    </style>
+</head>
+<body class="bg-[#EFECEA] text-[#323232]">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h1 class="name-font text-2xl tracking-tight">VIET HOAN TRAN</h1>
+            <div class="flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>                
+                <a href="career-summary.html" class="nav-link">Career</a>
+                <a href="training.html" class="nav-link">Education</a>
+                <a href="awards.html" class="nav-link">IT Awards</a>                
+                <a href="tech-exp.html" class="nav-link">Experience</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="employment.html" class="nav-link">Employment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-[#00b0f0] to-[#0099cc] text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="name-font text-6xl md:text-7xl tracking-tight mb-4 typewriter">Global IT Awards</h1>
+            <p class="text-xl text-white/80">Recognitions &amp; Achievements</p>
+            <div class="mt-6 inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-2 rounded-full text-sm">
+                <i class="fas fa-trophy"></i>
+                <span>30+ Years of IT Leadership Excellence</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+
+        <!-- Awards Section -->
+        <section class="mb-20">            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Award 1 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"World CIO 200 Award" 2021</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">Dec 5, 2021</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">Global CIO Forum • Grand Finale (36 countries)</p>
+                            <a href="https://issuu.com/enterprisechannelsmea/docs/titans-asia-may-2021" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"CIO 1000 APAC Award" 2021</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">Dec 2, 2021</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">Enterprise IT World • APAC + India</p>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:6873080911118811136/" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"Digital Transformation Inspire Award" 2020</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">Dec 14, 2020</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">Global CIO Forum • Grand Finale (26 Countries)</p>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:6744580192347459584/" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"World CIO 200 Award" 2020</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">Dec 3, 2020</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">Global CIO Forum • APAC (10 countries)</p>
+                            <a href="https://globalcioforum.com/the-world-cio-200-roadshow-2020-sweeps-through-apac-region/" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 5 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"CXO Tech Excellence Award" 2020</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">Oct 27-28, 2020</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">TechPlus Media &amp; CXOTV News (India + 7 countries)</p>
+                            <a href="https://techplusmedia.com/CXOtechsummit/" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 6 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"SuperHero CIO Award" 2020</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">Jun 13, 2020</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">Enterprise IT World (8 Countries)</p>
+                            <a href="https://www.enterpriseitworld.com/globalcioevent2020/" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 7 -->
+                <div class="award-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group animate-on-scroll">
+                    <div class="flex items-start gap-6">
+                        <div class="award-badge w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 text-white text-3xl shadow-md">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-semibold leading-tight">"Best 10 CIOs" 2005</h3>
+                                <span class="text-sm font-medium text-[#00b0f0] whitespace-nowrap">May 30, 2005</span>
+                            </div>
+                            <p class="text-gray-600 mt-2">IDG • Vietnam, Laos &amp; Cambodia</p>
+                            <a href="https://vst.mof.gov.vn/webcenter/portal/kbnn/r/o/ttsk/tdp/tdp_chitiet?dDocName=BTC085655&dID=46241&_adf.ctrl-state=q0yd35ztv_1&_afrLoop=2878541726948279#!%40%40%3F_afrLoop%3D2878541726948279%26dDocName%3DBTC085655%26dID%3D46241%26_adf.ctrl-state%3Dq0yd35ztv_5" target="_blank" 
+                               class="inline-flex items-center gap-2 mt-4 text-[#00b0f0] hover:underline font-medium">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Award
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Speaking & Thought Leadership -->
+            <div class="mt-16 bg-white rounded-3xl p-10 shadow-sm border border-gray-100">
+                <h3 class="text-2xl font-semibold mb-6 flex items-center gap-3">
+                    <i class="fas fa-microphone text-[#00b0f0]"></i>
+                    Thought Leadership
+                </h3>
+                <p class="text-[#323232] leading-relaxed text-[17.5px]">
+                    Conference Speaker, Keynote Speaker, and Contributor to various interviews and articles on ICT, 
+                    Digital Transformation &amp; Security in many countries including Singapore, India, Germany, UAE, 
+                    Malaysia, and Vietnam.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#323232] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm mb-10">
+                <p><i class="fas fa-map-marker-alt"></i> Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> +61 402 648 288</p>
+                <p><i class="fas fa-envelope"></i> VietHoanComputer@gmail.com</p>
+                <a href="https://www.linkedin.com/in/tranviethoan/" target="_blank" class="hover:text-white/80 transition">
+                    <i class="fab fa-linkedin"></i> Tran Viet Hoan
+                </a>
+            </div>
+                <p class="text-sm text-gray-400">The Hoan’s Copyright© 2026. Top Confidential. All Rights Reserved</p>                
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#00b0f0] text-white w-14 h-14 rounded-2xl flex items-center justify-center opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script>
+        // Scroll Animations with better staggering
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add a small extra delay based on order for better stagger
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 80);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: "-40px 0px -80px 0px"
+            });
+
+            elements.forEach(el => observer.observe(el));
+        }
+
+        // Back to Top Button - Fixed & Smooth
+        function initBackToTop() {
+            const btn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 600) {
+                    btn.classList.remove('opacity-0', 'invisible');
+                    btn.classList.add('opacity-100', 'visible');
+                } else {
+                    btn.classList.add('opacity-0', 'invisible');
+                    btn.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            btn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Update your existing load function
+        window.addEventListener('load', () => {
+            handleScrollAnimations();
+            initBackToTop();
+            initTypewriter();
+        });
+
+        // Call this in your existing window load function
+        window.addEventListener('load', () => {
+            // ... your existing code ...
+            initIndustriesCarousel();
+        });
+
+        // Typewriter Reset
+        function initTypewriter() {
+            const name = document.getElementById('hero-name');
+            name.style.animation = 'none';
+            void name.offsetWidth;
+            name.style.animation = 'typing 4.2s steps(38, end) forwards, blink-caret .75s step-end infinite';
+        }
+
+        // Initialize
+        window.addEventListener('load', () => {
+            handleScrollAnimations();
+            initBackToTop();
+            initTypewriter();
+        });
+    </script>
+</body>
+</html>

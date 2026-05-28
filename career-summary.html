@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Hoan Tran | Career Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Anton&display=swap');
+            
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #EFECEA;
+            scroll-behavior: smooth;
+        }
+        
+        .name-font {
+            font-family: 'Anton', sans-serif;
+        }
+
+        .navbar {
+            background: rgba(50, 50, 50, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .section-title {
+            color: #00b0f0;
+            border-bottom: 3px solid #00b0f0;
+            padding-bottom: 10px;
+        }
+
+        .nav-link {
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #00b0f0;
+        }
+
+        /* Scroll Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Dashboard Card Hover */
+        .dashboard-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        .dashboard-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 30px 60px -15px rgb(0 176 240 / 0.25);
+            border-color: #00b0f0;
+        }
+
+        /* Skill Card Hover - Enhanced */
+        .skill-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 30px 60px -15px rgb(0 176 240 / 0.25);
+            border-color: #00b0f0;
+            background-color: #fff;
+        }
+
+        /* Typewriter */
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #00b0f0;
+            white-space: nowrap;
+            width: fit-content;
+            margin: 0 auto;
+            animation: typing 4.2s steps(38, end) forwards, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00b0f0; }
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+        }
+        
+        #backToTop:hover {
+            transform: scale(1.1);
+            background-color: #028fc2;
+        }
+
+/* Timeline Styles */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 28px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #00b0f0, #028fc2);
+            border-radius: 9999px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 48px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: #00b0f0;
+            border: 4px solid #EFECEA;
+            border-radius: 50%;
+            z-index: 10;
+            box-shadow: 0 0 0 6px rgba(0, 176, 240, 0.2);
+        }
+
+        .timeline-content {
+            margin-left: 70px;
+            transition: all 0.4s ease;
+        }
+
+        .timeline-item:hover .timeline-content {
+            transform: translateX(8px);
+        }        
+
+    </style>
+</head>
+<body class="bg-[#EFECEA] text-[#323232]">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h1 class="name-font text-2xl tracking-tight">VIET HOAN TRAN</h1>
+            <div class="flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>                
+                <a href="career-summary.html" class="nav-link">Career</a>
+                <a href="training.html" class="nav-link">Education</a>
+                <a href="awards.html" class="nav-link">IT Awards</a>                
+                <a href="tech-exp.html" class="nav-link">Experience</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="employment.html" class="nav-link">Employment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-[#00b0f0] to-[#007ca8] text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="name-font text-6xl tracking-tight mb-4 typewriter">Career Summary</h1>
+            <p class="text-xl text-white/80">VIET HOAN TRAN — Global Award-Winning CTO/CIO</p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+
+        <div class="mb-12">            
+            <div class="timeline">
+                
+                <!-- GITSA -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#gitsa" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100 group-hover:border-[#00b0f0] group-hover:shadow-md transition-all">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold group-hover:text-[#00b0f0] transition-colors">CEO cum CTO</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">GITSA – Global IT Services Australia</p>
+                                    <p class="text-gray-600">IT & ERP Consulting for ANZ / APAC</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Aug 2022 – Present</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Plumbers Supply -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#plumbers" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">IT Supervisor – Acting IT Manager</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Plumbers Supply Co-op Australia</p>
+                                    <p class="text-gray-600">Wholesales (Sydney, Brisbane and Melbourne)</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Apr 2022 – Jul 2022</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hanwha Life -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#hanwha" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">Head of IT</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Hanwha Life Insurance</p>
+                                    <p class="text-gray-600">Top-2 Life Insurer from South Korea</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Nov 2018 – Oct 2021</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mirae Asset -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#mirae" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">CTO</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Mirae Asset Prevoir Life Insurance</p>
+                                    <p class="text-gray-600">Korea & France Life Insurer</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Dec 2016 – Nov 2018</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Robert Bosch -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#bosch" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">Group Delivery Manager – Deputy General Manager</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Robert Bosch</p>
+                                    <p class="text-gray-600">IT/ ERP Consulting</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Dec 2015 – Dec 2016</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Asian Dragon -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#asiandragon" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">CEO cum CTO</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Asian Dragon</p>
+                                    <p class="text-gray-600">IT/ DX Consulting & IT Managed Service</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Dec 2005 – Dec 2015</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Metro Cash & Carry -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#metro" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">CIO cum International Project Manager</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Metro Cash & Carry</p>
+                                    <p class="text-gray-600">Top-5 World Retail (Germany)</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Oct 2000 – Dec 2005</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hoffmann–La Roche -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#roche" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">National IT Manager</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Hoffmann–La Roche</p>
+                                    <p class="text-gray-600">Top-2 Switzerland Healthcare</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Jan 1999 – Oct 2000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Otis Elevator -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <a href="employment.html#otis" class="block group">
+                        <div class="timeline-content bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold">Senior MIS Manager</h3>
+                                    <p class="text-[#00b0f0] font-medium text-lg">Otis Elevator Company Ltd</p>
+                                </div>
+                                <p class="text-gray-500 font-medium whitespace-nowrap">Oct 1996 – Jan 1999</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#323232] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm mb-10">
+                <p><i class="fas fa-map-marker-alt"></i> Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> +61 402 648 288</p>
+                <p><i class="fas fa-envelope"></i> VietHoanComputer@gmail.com</p>
+                <a href="https://www.linkedin.com/in/tranviethoan/" target="_blank" class="hover:text-white/80 transition">
+                    <i class="fab fa-linkedin"></i> Tran Viet Hoan
+                </a>
+            </div>
+                <p class="text-sm text-gray-400">The Hoan’s Copyright© 2026. Top Confidential. All Rights Reserved</p>                
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#00b0f0] text-white w-14 h-14 rounded-2xl flex items-center justify-center opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script>
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('visible'), index * 80);
+                    }
+                });
+            }, { threshold: 0.15 });
+            elements.forEach(el => observer.observe(el));
+        }
+
+        function initBackToTop() {
+            const btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    btn.classList.remove('opacity-0', 'invisible');
+                    btn.classList.add('opacity-100', 'visible');
+                } else {
+                    btn.classList.add('opacity-0', 'invisible');
+                    btn.classList.remove('opacity-100', 'visible');
+                }
+            });
+            btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        }
+
+        window.addEventListener('load', () => {
+            handleScrollAnimations();
+            initBackToTop();
+        });
+    </script>
+</body>
+</html>

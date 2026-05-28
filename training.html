@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Hoan Tran | Education & Trainings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Anton&display=swap');
+        
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: #EFECEA; 
+            scroll-behavior: smooth; 
+        }
+        .name-font { font-family: 'Anton', sans-serif; }
+        .navbar { background: rgba(50, 50, 50, 0.95); backdrop-filter: blur(10px); }
+        .section-title { 
+            color: #00b0f0; 
+            border-bottom: 3px solid #00b0f0; 
+            padding-bottom: 10px; 
+        }
+        .nav-link { transition: all 0.3s; }
+        .nav-link:hover { color: #00b0f0; }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #00b0f0;
+            white-space: nowrap;
+            width: fit-content;
+            margin: 0 auto;
+            animation: typing 4.2s steps(38, end) forwards, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00b0f0; }
+        }
+
+        .animate-on-scroll {
+            opacity: 0; 
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .animate-on-scroll.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+
+        .edu-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        .edu-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgb(0 176 240 / 0.25);
+            border-color: #00b0f0;
+        }
+    </style>
+</head>
+<body class="bg-[#EFECEA] text-[#323232]">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h1 class="name-font text-2xl tracking-tight">VIET HOAN TRAN</h1>
+            <div class="flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>                
+                <a href="career-summary.html" class="nav-link">Career</a>
+                <a href="training.html" class="nav-link">Education</a>
+                <a href="awards.html" class="nav-link">IT Awards</a>                
+                <a href="tech-exp.html" class="nav-link">Experience</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="employment.html" class="nav-link">Employment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-[#00b0f0] to-[#007ca8] text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="name-font text-6xl tracking-tight mb-4 typewriter">Education & Trainings</h1>
+            <p class="text-xl text-white/80">VIET HOAN TRAN — Global Award-Winning CTO/CIO</p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+
+        <!-- Formal Education -->
+        <div class="mb-16">
+            <h2 class="section-title text-3xl font-semibold mb-8 animate-on-scroll">Formal Education</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- University of Technology -->
+                <div class="edu-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Information Technology</h3>
+                            <p class="text-[#00b0f0] font-medium text-lg">University of Technology, Ho Chi Minh City</p>
+                        </div>
+                        <p class="text-gray-500 font-medium">Tertiary</p>
+                    </div>
+                </div>
+
+                <!-- General University -->
+                <div class="edu-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-semibold">English Linguistics</h3>
+                            <p class="text-[#00b0f0] font-medium text-lg">General University of Ho Chi Minh City</p>
+                        </div>
+                        <p class="text-gray-500 font-medium">Tertiary</p>
+                    </div>
+                </div>
+
+                <!-- MBA -->
+                <div class="edu-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Master of Business Administration (MBA)</h3>
+                            <p class="text-[#00b0f0] font-medium text-lg">American University & Vietnam University</p>
+                        </div>
+                        <p class="text-gray-500 font-medium">Final Term</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Certifications & Trainings -->
+        <div>
+            <h2 class="section-title text-3xl font-semibold mb-8 animate-on-scroll">Professional Certifications & Trainings</h2>
+            <p class="text-gray-600 mb-10 animate-on-scroll">
+                <span class="font-bold">
+                    More than 36 Certificates in IT (ITIL V4, TOGAF, Microsoft 365 Administration, Microsoft Dynamics 365 F/O ERP, Microsoft Dynamics CRM, SAP Project Manager, ...) & Leadership from Australia (Swinburne University, University of Sydney), TAFE NSW, Singapore, Germany, Viet Nam, …</p>
+            <div class="space-y-6">
+                <!-- Recent Key Certifications -->
+                <div class="edu-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll">
+                    <h3 class="font-semibold text-xl mb-6 flex items-center gap-3">
+                        <i class="fas fa-certificate text-[#00b0f0]"></i>
+                        Key Recent Certifications
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6 text-[15.5px]">
+                        <div>
+                            <p><strong>ITIL V4 Foundation</strong></p>
+                            <p class="text-gray-500">People Cert, Sydney • May 2024</p>
+                        </div>
+                        <div>
+                            <p><strong>Microsoft 365 & Azure Administration</strong></p>
+                            <p class="text-gray-500">LinkedIn Learning • May 2023</p>
+                        </div>
+                        <div>
+                            <p><strong>Microsoft Dynamics 365 CRM</strong></p>
+                            <p class="text-gray-500">LinkedIn Learning • Jan–Feb 2023</p>
+                        </div>
+                        <div>
+                            <p><strong>Microsoft Dynamics 365 Finance & Operations ERP</strong></p>
+                            <p class="text-gray-500">LinkedIn Learning • Apr 2023</p>
+                        </div>
+                        <div>
+                            <p><strong>TOGAF Enterprise Architecture Foundation</strong></p>
+                            <p class="text-gray-500">LinkedIn Learning • Jan 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Other Training -->
+                <div class="edu-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll">
+                    <h3 class="font-semibold text-xl mb-6 flex items-center gap-3">
+                        <i class="fas fa-graduation-cap text-[#00b0f0]"></i>
+                        Leadership & Specialized Training
+                    </h3>
+                    <ul class="list-disc pl-6 space-y-3 text-[#323232]">
+                        <li>IFRS 17 Life Insurance Project – Hanwha Life Headquarter, Seoul, South Korea (2019)</li>
+                        <li>Leadership Laws for Great Leaders – The John Maxwell, Vietnam (2019)</li>
+                        <li>4 Roles of Leadership – Franklin R. Covey, Singapore (2004)</li>
+                        <li>Enterprise Project Management Skills – PSSI, Philippines (2003)</li>
+                        <li>Dale Carnegie Leadership Training – San Francisco, Vietnam (2003)</li>
+                        <li>Windows 2000 Advanced Server & HP-UX System Administration – Microsoft, Cisco, Hewlett-Packard (2000–2002)</li>
+                        <li>Leadership Skills for Managers – Swinburne University of Technology, Australia (1997)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#323232] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm mb-10">
+                <p><i class="fas fa-map-marker-alt"></i> Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> +61 402 648 288</p>
+                <p><i class="fas fa-envelope"></i> VietHoanComputer@gmail.com</p>
+                <a href="https://www.linkedin.com/in/tranviethoan/" target="_blank" class="hover:text-white/80 transition">
+                    <i class="fab fa-linkedin"></i> Tran Viet Hoan
+                </a>
+            </div>
+                <p class="text-sm text-gray-400">The Hoan’s Copyright© 2026. Top Confidential. All Rights Reserved</p>                
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#00b0f0] text-white w-14 h-14 rounded-2xl flex items-center justify-center opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script>
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('visible'), index * 80);
+                    }
+                });
+            }, { threshold: 0.15 });
+            elements.forEach(el => observer.observe(el));
+        }
+
+        function initBackToTop() {
+            const btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    btn.classList.remove('opacity-0', 'invisible');
+                    btn.classList.add('opacity-100', 'visible');
+                } else {
+                    btn.classList.add('opacity-0', 'invisible');
+                    btn.classList.remove('opacity-100', 'visible');
+                }
+            });
+            btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        }
+
+        window.addEventListener('load', () => {
+            handleScrollAnimations();
+            initBackToTop();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet Hoan Tran | CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Anton&display=swap');
+            
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #EFECEA;
+            scroll-behavior: smooth;
+        }
+        
+        .name-font {
+            font-family: 'Anton', sans-serif;
+        }
+
+        .navbar {
+            background: rgba(50, 50, 50, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .section-title {
+            color: #00b0f0;
+            border-bottom: 3px solid #00b0f0;
+            padding-bottom: 10px;
+        }
+
+        .nav-link {
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #00b0f0;
+        }
+
+        /* Scroll Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Dashboard Card Hover */
+        .dashboard-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        .dashboard-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 30px 60px -15px rgb(0 176 240 / 0.25);
+            border-color: #00b0f0;
+        }
+
+        /* Skill Card Hover - Enhanced */
+        .skill-card {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 30px 60px -15px rgb(0 176 240 / 0.25);
+            border-color: #00b0f0;
+            background-color: #fff;
+        }
+
+        /* Typewriter */
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #00b0f0;
+            white-space: nowrap;
+            width: fit-content;
+            margin: 0 auto;
+            animation: typing 4.2s steps(38, end) forwards, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #00b0f0; }
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+        }
+        
+        #backToTop:hover {
+            transform: scale(1.1);
+            background-color: #028fc2;
+        }
+    </style>
+</head>
+<body class="bg-[#EFECEA] text-[#323232]">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h1 class="name-font text-2xl tracking-tight">VIET HOAN TRAN</h1>
+            <div class="flex items-center gap-8 text-sm font-medium">
+                <a href="resume.html" class="nav-link">Home</a>                
+                <a href="career-summary.html" class="nav-link">Career</a>
+                <a href="training.html" class="nav-link">Education</a>
+                <a href="awards.html" class="nav-link">IT Awards</a>                
+                <a href="tech-exp.html" class="nav-link">Experience</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="employment.html" class="nav-link">Employment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-br from-[#00b0f0] to-[#007ca8] text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 id="hero-name" class="name-font text-8xl tracking-tight mb-4 typewriter">VIET HOAN TRAN</h1>
+            <p class="text-2xl text-white/90 animate-on-scroll visible delay-100">Global Award-Winning CTO/CIO</p>
+            <div class="mt-8 flex justify-center gap-8 text-sm">
+                <p><i class="fas fa-map-marker-alt"></i> Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> +61 402 648 288</p>
+                <p><i class="fas fa-envelope"></i> VietHoanComputer@gmail.com</p>
+                <a href="https://www.linkedin.com/in/tranviethoan/" target="_blank" class="hover:text-white/80 transition">
+                    <i class="fab fa-linkedin"></i> Tran Viet Hoan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6 py-12">
+
+        <!-- Professional Summary -->
+        <section id="professional-summary" class="mb-20">
+            <h2 class="section-title text-4xl font-semibold mb-8 animate-on-scroll">Professional Summary</h2>
+            <p class="text-[#323232] leading-relaxed text-[17.5px] animate-on-scroll delay-100">
+            A global award-winning CTO/ CIO with strategic mindset and hands-on experience managing technical scoping and costing of solution engagements, working directly with our specialists and clients to produce compelling, fit for purpose concepts and designs using a wide range of technology. 
+            Having excellent experience working with the client’s technical environment and business stakeholders to translate digital strategy into practical technology roadmaps for the customer and recognised for successfully delivering multiple complex IT/ DX programs, driving commercial outcomes, and realising business value across global environments. 
+            I am pursuing the CTO role in your famous organization where I can contribute my experience in both IT & diversified businesses.</p>
+        </section>
+
+        <!-- Dashboard Shortcuts -->
+        <section class="mb-20">
+            <h2 class="section-title text-4xl font-semibold mb-10 animate-on-scroll">Explore My Profile</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <a href="career-summary.html" class="dashboard-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 block group animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-project-diagram text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">I. Career Summary</h3>
+                    <p class="text-gray-600">Bachelor of Advanced Computing (Cybersecurity)</p>
+                </a>
+
+                <a href="education.html" class="dashboard-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 block group animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-graduation-cap text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">II. Education & Trainings</h3>
+                    <p class="text-gray-600">Programming, Cybersecurity, Tools & Technologies</p>
+                </a>
+
+                <a href="awards.html" class="dashboard-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 block group animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-trophy text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">III. Global IT Awards</h3>
+                    <p class="text-gray-600">Certificates & Awards</p>
+                </a>                
+
+                <a href="tech-exp.html" class="dashboard-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 block group animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-tools text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">IV. Outstaning Technical Experience</h3>
+                    <p class="text-gray-600">Academic & Personal Projects</p>
+                </a>
+
+                <a href="skills.html" class="dashboard-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 block group animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-users text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">V. Management & Leadership Skills</h3>
+                    <p class="text-gray-600">Hospitality & Team Roles</p>
+                </a>
+
+                <a href="employments.html" class="dashboard-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 block group animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-briefcase text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">VI. Employment Details & Achievements</h3>
+                    <p class="text-gray-600">Clubs, Volunteering & Leadership</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Industries -->
+        <section id="industries" class="mb-20">
+            <h2 class="section-title text-4xl font-semibold mb-10 animate-on-scroll">Industries</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="skill-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-store text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Retail / Wholesale / Distribution</h3>
+                </div>
+
+                <div class="skill-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll delay-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-boxes-stacked text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">FMCG (Fast Moving Consumer Goods)</h3>
+                </div>
+
+                <div class="skill-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll delay-200">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-laptop-code text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">IT / DX / ERP Consulting</h3>
+                </div>
+
+                <div class="skill-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll delay-300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-hospital text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Healthcare</h3>
+                </div>
+
+                <div class="skill-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll delay-400">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-shield-halved text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Insurance</h3>
+                </div>
+
+                <div class="skill-card bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll delay-500">
+                    <div class="flex items-center gap-4 mb-4">
+                        <i class="fas fa-building text-4xl text-[#00b0f0]"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Australian Local Government (Council)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== LANGUAGES SECTION ==================== -->
+        <section id="languages" class="mb-20">
+            <h2 class="section-title text-4xl font-semibold mb-10 animate-on-scroll">Languages</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- English -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll group hover:border-[#00b0f0]">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-5">
+                            <span class="text-6xl">🇬🇧</span>
+                            <div>
+                                <h3 class="text-2xl font-semibold">English</h3>
+                            </div>
+                        </div>
+                        <div class="px-6 py-2.5 bg-[#00b0f0] text-white font-semibold rounded-3xl text-sm shadow">
+                            Native
+                        </div>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-4 bg-[#00b0f0] rounded-full w-0 animate-bar" 
+                            style="animation-delay: 100ms; width: 100%;"></div>
+                    </div>
+                </div>
+
+                <!-- Vietnamese -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll group hover:border-[#00b0f0]">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-5">
+                            <span class="text-6xl">🇻🇳</span>
+                            <div>
+                                <h3 class="text-2xl font-semibold">Vietnamese</h3>
+                            </div>
+                        </div>
+                        <div class="px-6 py-2.5 bg-[#00b0f0] text-white font-semibold rounded-3xl text-sm shadow">
+                            Native
+                        </div>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-4 bg-[#00b0f0] rounded-full w-0 animate-bar" 
+                            style="animation-delay: 300ms; width: 100%;"></div>
+                    </div>
+                </div>
+
+                <!-- French -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll group hover:border-[#00b0f0]">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-5">
+                            <span class="text-6xl">🇫🇷</span>
+                            <div>
+                                <h3 class="text-2xl font-semibold">French</h3>
+                            </div>
+                        </div>
+                        <div class="px-6 py-2.5 bg-[#00b0f0]/80 text-white font-semibold rounded-3xl text-sm shadow">
+                            Intermediate
+                        </div>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-4 bg-[#00b0f0] rounded-full w-0 animate-bar" 
+                            style="animation-delay: 500ms; width: 65%;"></div>
+                    </div>
+                </div>
+
+                <!-- Japanese -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 animate-on-scroll group hover:border-[#00b0f0]">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-5">
+                            <span class="text-6xl">🇯🇵</span>
+                            <div>
+                                <h3 class="text-2xl font-semibold">Japanese</h3>
+                            </div>
+                        </div>
+                        <div class="px-6 py-2.5 bg-[#00b0f0]/50 text-white font-semibold rounded-3xl text-sm shadow">
+                            Beginner
+                        </div>
+                    </div>
+                    <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-4 bg-[#00b0f0] rounded-full w-0 animate-bar" 
+                            style="animation-delay: 700ms; width: 25%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- References -->
+        <section id="references" class="mb-20">
+            <h2 class="section-title text-4xl font-semibold mb-8 animate-on-scroll">References</h2>
+            <p class="text-[#323232] leading-relaxed text-[17.5px] animate-on-scroll delay-100">
+                Referees available upon request.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#323232] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm mb-10">
+                <p><i class="fas fa-map-marker-alt"></i> Sydney, NSW 2000</p>
+                <p><i class="fas fa-phone"></i> +61 402 648 288</p>
+                <p><i class="fas fa-envelope"></i> VietHoanComputer@gmail.com</p>
+                <a href="https://www.linkedin.com/in/tranviethoan/" target="_blank" class="hover:text-white/80 transition">
+                    <i class="fab fa-linkedin"></i> Tran Viet Hoan
+                </a>
+            </div>
+                <p class="text-sm text-gray-400">The Hoan’s Copyright© 2026. Top Confidential. All Rights Reserved</p>                
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-[#00b0f0] text-white w-14 h-14 rounded-2xl flex items-center justify-center opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script>
+        // Scroll Animations with better staggering
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add a small extra delay based on order for better stagger
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 80);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: "-40px 0px -80px 0px"
+            });
+
+            elements.forEach(el => observer.observe(el));
+        }
+
+        // Back to Top Button - Fixed & Smooth
+        function initBackToTop() {
+            const btn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 600) {
+                    btn.classList.remove('opacity-0', 'invisible');
+                    btn.classList.add('opacity-100', 'visible');
+                } else {
+                    btn.classList.add('opacity-0', 'invisible');
+                    btn.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            btn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Update your existing load function
+        window.addEventListener('load', () => {
+            handleScrollAnimations();
+            initBackToTop();
+            initTypewriter();
+        });
+
+        // Call this in your existing window load function
+        window.addEventListener('load', () => {
+            // ... your existing code ...
+            initIndustriesCarousel();
+        });
+
+        // Typewriter Reset
+        function initTypewriter() {
+            const name = document.getElementById('hero-name');
+            name.style.animation = 'none';
+            void name.offsetWidth;
+            name.style.animation = 'typing 4.2s steps(38, end) forwards, blink-caret .75s step-end infinite';
+        }
+
+        // Initialize
+        window.addEventListener('load', () => {
+            handleScrollAnimations();
+            initBackToTop();
+            initTypewriter();
+        });
+    </script>
+</body>
+</html>
